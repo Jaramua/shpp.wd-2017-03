@@ -69,12 +69,27 @@
 
     <section class="contact">
     	<h1>Contact us!</h1>
-      	<form>
-		   <input type="text" value="Type here your name, please">
-		   <input type="text" value="Type here your email, please">
-		   <input type="text" value="Type here your phone, please">
-		   <textarea name="text" placeholder="Ask your question"></textarea>
-		   <input type="submit" value="Send email!">
+      <form>
+		    <input type="text" value="Type here your name, please">
+		    <input type="email" value="Type here your email, please">
+		    <input type="tel" value="Type here your phone, please"><br>
+        Your gender:<br>
+        <br>
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other<br>
+        <br>
+        Who are you?<br>
+        <br>
+        <input type="checkbox" name="vehicle1" value="Student">I am a student<br>
+        <input type="checkbox" name="vehicle2" value="Teacher">I am a teacher<br>
+        <input type="checkbox" name="vehicle3" value="Bird">I'm a little bird in a big, brutal world<br>
+        <br>
+        When were you born?<input type="date" name="bday"><br>
+        <br>
+        What is your favorite color?<input type="color" name="favcolor">
+		    <textarea name="text" placeholder="Ask your question"></textarea>
+		    <input type="submit" value="Send email!">
 		</form>   
     </section>
     <script src="https://use.fontawesome.com/12057deb98.js"></script>
