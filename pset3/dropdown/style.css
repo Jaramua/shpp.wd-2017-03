@@ -15,14 +15,21 @@
 	cursor: default;
 }
 
-h3 {
+span {
+	
+	cursor: pointer;
+}
+
+span h3 {
 	padding: 5px;
 	font-size: 20px; 
 }
 
-h3 span {
+.container span  h3 i {
+
 	float: right;
 	cursor: pointer;
+	font-size: 25px;
 }
 
 ul {
@@ -30,10 +37,12 @@ ul {
 	overflow: hidden;
 	margin:0;
 	font-size: 18px; 
+
 }
 
 ul li {
 	
 	list-style-type: none;
 	padding: 10px;
+	cursor: pointer;
 }
