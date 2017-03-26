@@ -1,102 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru-UA">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Pset 2</title>
     <style>
 
-	  table {
-	      border-collapse: collapse;
-	  }
+        table {
+            border-collapse: collapse;
+        }
 
-	  textarea {
-        width: 450px;
-        height: 150px;
-	  }
-  </style>
-  </head>
-  <body>
-  <section>
-  	<h1>Задание №1</h1>
-  	<button onclick="document.getElementById('task1').innerHTML = sum()">Task 1</button>
-  	<p id="task1"></p>
-  </section>
+        textarea {
+            width: 450px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <h1>Задание №1</h1>
+    <button onclick="document.getElementById('task1').innerText = sum()">Task 1</button>
+    <p id="task1"></p>
+</section>
 
-  <section>
-  	<h1>Задание №2</h1>
-  	<button onclick="document.getElementById('task2').innerHTML = sum1()">Task 2</button>
-  	<p id="task2"></p>
-  </section>
+<section>
+    <h1>Задание №2</h1>
+    <button onclick="document.getElementById('task2').innerText = sum1()">Task 2</button>
+    <p id="task2"></p>
+</section>
 
-  <section>
-  	<h1>Задание №3</h1>
-  	<button onclick="pyramid()">Task 3</button>
-  	<p id="task3"></p>
-  </section>
+<section>
+    <h1>Задание №3</h1>
+    <button onclick="pyramid()">Task 3</button>
+    <p id="task3"></p>
+</section>
 
-  <section>
-  	<h1>Задание №4</h1>
-  	Введите время в секундах: <input id="seconds" type="number" min="1"><br><br>
-  	<button onclick="converter()">Task 4</button><br>
-  	<p id="task4"></p>
-  </section>
+<section>
+    <h1>Задание №4</h1>
+    Введите время в секундах: <input id="seconds" type="number" min="1"><br><br>
+    <button onclick="converter()">Task 4</button>
+    <br>
+    <p id="task4"></p>
+</section>
 
-  <section>
-  	<h1>Задание №5</h1>
-  	Укажите ваш возраст: <input id="age" type="number" min="0"><br><br>
-  	<button onclick="age()">Task 5</button><br>
-  	<p id="task5"></p>
-  </section>
+<section>
+    <h1>Задание №5</h1>
+    Укажите ваш возраст: <input id="age" type="number" min="0"><br><br>
+    <button onclick="age()">Task 5</button>
+    <br>
+    <p id="task5"></p>
+</section>
 
-  <section>
-  	<h1>Задание №6</h1>
-  	Введите первую дату: <input id="date1" type="datetime-local" step="1" required><br><br>
+<section>
+    <h1>Задание №6</h1>
+    Введите первую дату: <input id="date1" type="datetime-local" step="1" required><br><br>
     Введите вторую дату: <input id="date2" type="datetime-local" step="1" required><br><br>
-    <button onclick="time()">Task 6</button><br>
-  	<p id="task6"></p>
-  </section>
+    <button onclick="time()">Task 6</button>
+    <br>
+    <p id="task6"></p>
+</section>
 
-  <section>
-  	<h1>Задание №7</h1>
-      Ведите дату вашего рождения:<input id="date_zod" type="date"><br><br>
-    	<input type="button" value="Кто я?!" onclick="zodiac()">
-    	<br><br>
-    	</form>
-    	<p id="task7"></p>
-  </section>  
+<section>
+    <h1>Задание №7</h1>
+    Ведите дату вашего рождения:<input id="date_zod" type="date"><br><br>
+    <input type="button" value="Кто я?!" onclick="zodiac()">
+    <br><br>
+    <p id="task7"></p>
+</section>
 
-	<section>
-  	<h1>Задание №8</h1>
+<section>
+    <h1>Задание №8</h1>
     Введите первое число: <input id="n1" type="number" min="2"><br><br>
-	  Введите второе число: <input id="n2" type="number" min="2"><br><br>
-	  <button onclick="board()">Task 8</button><br>
-  	<p id="task8"></p>
-  </section>
+    Введите второе число: <input id="n2" type="number" min="2"><br><br>
+    <button onclick="board()">Task 8</button>
+    <br>
+    <p id="task8"></p>
+</section>
 
-  <section>
-  	<h1>Задание №9</h1>
-  	Введите номер квартиры:<input id="number" type="number" step="1" required><br><br>
+<section>
+    <h1>Задание №9</h1>
+    Введите номер квартиры:<input id="number" type="number" step="1" required><br><br>
     Введите кол-во парадных:<input id="entrances" type="number" step="1" required><br><br>
     Введите кол-во квартир на этаже:<input id="flatsPerFloors" type="number" step="1" required><br><br>
     Введите кол-во этажей:<input id="floors" type="number" step="1" required><br><br>
-    <button onclick="flat()">Task 9</button><br>
-  	<p id="task9"></p>
-  </section>
+    <button onclick="flat()">Task 9</button>
+    <br>
+    <p id="task9"></p>
+</section>
 
-  <section>
-  	<h1>Задание №10</h1>
-  	Введите ваше число: <input id="n" type="number" min="1" required><br><br>
-  	<button onclick="num_sum()">Task 10</button><br>
-  	<p id="task10"></p>
-  </section>
+<section>
+    <h1>Задание №10</h1>
+    Введите ваше число: <input id="n" type="number" min="1" required><br><br>
+    <button onclick="num_sum()">Task 10</button>
+    <br>
+    <p id="task10"></p>
+</section>
 
-  <section>
-  	<h1>Задание №11</h1>
-  	Ссылки сюда:<br>
-  	<textarea  id="txt_area" onchange="txtArea()"></textarea>
-  	<p id="task6"></p>
-  </section>
+<section>
+    <h1>Задание №11</h1>
+    Ссылки сюда:<br>
+    <textarea id="txt_area" onchange="txtArea()"></textarea>
+    <p id="task11"></p>
+</section>
 
 <script src="script.js"></script>
-  </body>
+</body>
 </html>
