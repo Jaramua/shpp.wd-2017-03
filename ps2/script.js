@@ -288,7 +288,7 @@ function num_sum() {
 }
 
 function txtArea() {
-    var input = document.getElementById("text_area"").value;
+    var input = document.getElementById("text_area").value;
     var links = input.split(',');
 
     for (var i in links) {
