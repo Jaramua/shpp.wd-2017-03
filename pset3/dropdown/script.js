@@ -3,12 +3,7 @@ $(document).ready(function() {
 	var $ul = $("ul");
 	var $uli = $("ul li");
 	$ul.hide();
-	$uli.hover(function(){
-		$(this).css("background-color", "#EDE2DA");
-	});
-	$uli.mouseleave(function(){
-		$(this).css("background-color", "#F7F7F7");
-	});
+
 	$("span h3").click(function(){
 		$(this).parent().next().slideToggle();
 	});
