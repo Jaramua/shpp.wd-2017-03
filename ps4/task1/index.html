@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+</head>
+<body>
+<div>
+    <h1>Task 1</h1>
+    <p><?php task1(); ?></p>
+</div>
+<div>
+    <h1>Task 2</h1>
+    <p><?php task2(); ?></p>
+</div>
+<div>
+    <h1>Task 3</h1>
+    <p><?php task3(); ?></p>
+</div>
+<div>
+    <h1>Task 4</h1>
+    <form class="task_form" action="main.php" method="post">
+        <p>First number:</p>
+        <input name="row" type="number"
+               min="1" max="50">
+        <p>Second number:</p>
+        <input name="col" type="number"
+               min="1" max="50"><br><br>
+        <input name="task4" type="submit" value="Submit">
+    </form><br>
+    <table  cellspacing="0px" cellpadding="0px" border="1px">
+            <?php task4();?>
+    </table>
+</div>
+<div>
+    <h1>Task 5</h1>
+    <form action="main.php" method="post">
+        <p>Enter your number:</p>
+        <input name="number" type="number" min="1">
+        <p><?php echo task5(); ?></p> 
+        <input name="task5" type="submit" value="Click!">
+    </form>
+</div>
+</body>
+</html>
