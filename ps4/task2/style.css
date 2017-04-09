@@ -4,9 +4,11 @@
 }
 body {
 	background:url(http://orig07.deviantart.net/5aca/f/2012/164/6/0/diablo_3_act_2_wallpaper_by_arixev-d53bpoi.jpg);
-	background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -17,8 +19,8 @@ body {
     background: rgba(168, 167, 148, .6);
     margin-top: 200px;
     border-radius: 10px;
-  	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-  	font-family: 'Marcellus SC', serif;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    font-family: 'Marcellus SC', serif;
 }  
 
 input[type='submit']{
@@ -35,6 +37,6 @@ input[type='submit']{
     color: black;
     padding-top: 8px;
     padding-bottom: 8px;
-	background:rgba(255,255,255,.1);
-	box-shadow:0 3px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    background:rgba(255,255,255,.1);
+    box-shadow:0 3px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
