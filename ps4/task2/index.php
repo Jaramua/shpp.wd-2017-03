@@ -1,4 +1,4 @@
-<?php  
+<?php
 session_start();
 ?>
 
@@ -23,7 +23,7 @@ session_start();
 			<label for="dwarf"><input type="radio" id="cobol" name="race" value="dwarf">Dwarf</label><br><br>
 			<span class="error"><?php if(isset($_SESSION['error'])){
 				echo $_SESSION['error'];
-				unset($_SESSION['error']);   
+				unset($_SESSION['error']);
 			}?></span>
 			<input type="submit" name="submit" value="Submit"><br>
 		</form>

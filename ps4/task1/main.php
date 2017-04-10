@@ -2,7 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Task 1</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        td {
+            min-width: 20px;
+            min-height: 20px;
+        }
+
+    </style>
 </head>
 <body>
     <div>
@@ -81,7 +93,7 @@ function task3()
         $num .= "<br/>";
     }
     echo $num;
-}    
+}
 
 
 
@@ -99,9 +111,9 @@ function task4()
         echo "<tr>";
         for ($col = 1; $col <= $n2; $col++) {
             if (($row + $col) % 2 == 0) {
-                echo "<td height=40px width=40px bgcolor=#FFFFFF></td>";
+                echo "<td height=20px width=20px bgcolor=#FFFFFF></td>";
             } else {
-                echo "<td height=40px width=40px bgcolor=#000000></td>";
+                echo "<td height=20px width=20px bgcolor=#000000></td>";
             }
         }
         echo "</tr>";
@@ -122,6 +134,6 @@ function task5()
         $sum = array_sum(str_split($num));
         return $sum;
     }
-}    
+}
 
 

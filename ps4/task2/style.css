@@ -4,7 +4,6 @@
 }
 body {
 	background:url(http://orig07.deviantart.net/5aca/f/2012/164/6/0/diablo_3_act_2_wallpaper_by_arixev-d53bpoi.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
 }
 .container {
@@ -21,7 +20,7 @@ body {
     border-radius: 10px;
     box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
     font-family: 'Marcellus SC', serif;
-}  
+}
 
 input[type='submit']{
     width: 150px;
