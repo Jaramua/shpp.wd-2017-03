@@ -24,8 +24,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('Location: index.php');
     } else {
 
-        $name = test_input($_POST["name"]);
-        $password = test_input($_POST["password"]);
+        // $name = test_input($_POST["name"]);
+        // $password = test_input($_POST["password"]);
+        $name = ($_POST["name"]);
+        $password = ($_POST["password"]);
 
         $arr = array();
         $jsonFile = 'users.json';
@@ -49,18 +51,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $data = json_encode($arr);
         file_put_contents($jsonFile, $data);
-        header('Content-Type: application/json');
-        echo $data;
+        // header('Content-Type: application/json');
+        // echo $data;
     }
 }
 
-function test_input($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
+// function test_input($data)
+// {
+//     $data = trim($data);
+//     $data = stripslashes($data);
+//     $data = htmlspecialchars($data);
+//     return $data;
+// }
 
 ?>
 

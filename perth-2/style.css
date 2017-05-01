@@ -1,0 +1,329 @@
+* {
+	margin: 0;
+	padding: 0 0 0;
+}
+
+body {
+	margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.wraper {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 500px;
+}
+
+header {
+	margin: 0 auto;
+    padding: 10px 0 10px; 
+    background-image: url(import/blue-pattern.jpg);
+}
+
+header .container {
+	max-width: 960px;
+	width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+header .container .logo {
+    font-size: 50px;
+    background: #FFF;
+    width: 100px;
+    height: 100px;
+    color: #03b2e4;
+    text-align: center;
+    box-shadow: 15px 15px 5px 0px rgba(0, 162, 209, 0.75);
+    font-family: 'Kaushan Script', cursive;
+}
+
+header .container .drop i {
+    font-size: 40px;
+    color: #FFF;
+}
+
+.home {
+	position: relative;
+	background-image: url(import/blue-pattern.jpg);
+}
+
+.home .first {
+    max-width: 960px;
+	width: 80%;
+	height: 700px; 
+    margin: 0 auto;
+    display: block;
+    padding-top: 3%;
+    background-image: url(import/iphone.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 30%; 
+}
+
+.home .first .first-text{
+	width: 80%;
+    padding-top: 5%;
+    color: #FFF;
+    padding-bottom: 30%;
+    background-image: none;
+    position: relative;
+    float: right;
+
+}
+
+.home  .first .first-text h1 {
+	font-family: 'BlackJack';
+	font-size: 75px;
+	text-align: right;
+}
+
+.home  .first .first-text p {
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+/*	font-size: 2em;*/
+/*	font-size: 30px;*/
+	font-size: 190%;
+	margin-top: 3%;
+	text-align: justify;
+}
+
+.home  .first a {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	width: 150px;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid  white;
+    border-radius: 2px;
+    color: #FFF;
+    margin-top: 45px; 
+    float: right;
+}
+
+/*.home .first .image {
+
+	width: 30%;
+	height: auto;
+    background-image: url(import/iphone.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 90%;
+}*/
+
+.hello {
+	width: 100%;
+	background: #f4f4f4;
+}
+
+.hello .second {
+	width: 80%;
+	max-width: 960px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px; 
+    background-image: url(import/ipad.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 35%; 
+}
+
+.hello .second .second-text{
+	/*width: 50%;*/
+    margin-top: 3%;
+    color: #707070;
+    margin-bottom: 13%;
+}
+
+.hello .second .second-text h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	text-align: justify;
+}
+
+.hello  .second .second-text p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	margin-top: 20px;
+	text-align: left;
+}
+.hello  .second .second-text .upper {
+	width: 50%;
+}
+
+.hello  .second .second-text .lower {
+	width: 50%;
+}	
+
+.hello  .second a {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	width: 150px;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid  #21a590;
+    border-radius: 2px;
+    color: #21a590;
+    margin-top: 45px; 
+}
+
+.dribbble {
+	background: white;
+}
+
+.dribbble .third {
+	width: 80%;
+	max-width: 960px;
+	height: 600px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 30px; 
+    background-image: url(import/devices.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 70%;
+}
+
+.dribbble .third .third-text {
+	width: 40%;
+    margin-top: 30px;
+    color: #707070;
+    float: right;
+    padding-bottom: 5%;
+}
+
+.dribbble  .third .third-text h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	text-align: justify;
+}
+
+.dribbble  .third .third-text p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	margin-top: 2%;
+	text-align: justify;
+	margin-bottom: 1%;
+}
+
+.dribbble  .third .third-text .upper {
+	width: 100%;
+}
+
+.dribbble  .third .third-text .lower {
+	width: 100%;
+}
+
+.dribbble  .third a {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	width: 180px;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid  #ef1359;
+    border-radius: 2px;
+    color: #ef1359;
+    margin-top: 45px; 
+}
+
+/*.dribbble .third .device {
+	width: 50%;
+    display: block;
+    margin-top: 25%;
+}
+
+.dribbble .third .device img {
+	width: 100%;
+}*/
+
+.beer {
+	height: 300px;
+	background-image: url(import/green-pattern.jpg);
+	
+}
+
+.beer .fourth{
+	width: 100%;
+	max-width: 1200px;
+	width: 500px;
+    padding: 10px 0 10px;
+    margin: 0 auto; 
+    text-align: center;
+    justify-content: center;
+    color: #FFF;
+}
+
+.beer .fourth p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 45px;
+	margin-top: 60px; 
+} 
+
+.beer .fourth a {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	width: 200px;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid  white;
+    border-radius: 2px;
+    color: white;
+    margin-top: 45px; 
+    margin-left: 145px;
+}
+
+.contact {
+	width: 100%;
+	background: #f4f4f4;
+}
+
+.contact .fifth {
+	padding-top: 18%;
+	padding-left: 2%;
+	display: flex;
+	margin: 0 auto;
+	width: 500px;
+	flex-direction: column;
+}
+
+.contact .fifth .icons .box {
+	display: flex;
+	flex-direction: row;
+	padding: 2%;
+	margin: 0 auto;
+}
+
+.contact .fifth .icons .box .circle {
+    border-color: black;
+	border-radius: 50%;
+	padding: 8%;
+}
+
+.contact .fifth .icons .box i {
+	font-size: 30px;
+}
+
+
+
+
+
