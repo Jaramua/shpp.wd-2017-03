@@ -1,3 +1,5 @@
+var messages = [];
+
 $(document).ready(function () {
 
     setInterval(getMsg, 1000);
@@ -9,14 +11,22 @@ $(document).ready(function () {
     });
 
     function getMsg() {
-        $.post('main_getting_data.php', '', function (data) {
+        var time = 0;
+
+        if (messages[messages.length - 1] && messages[messages.length - 1].time) {
+            time = messages[messages.length - 1].time;
+        }
+
+        $.post('main_getting_data.php', {timestamp: time}, function (data) {
             $chat = $(".chat-window");
             $chat.html('');
 
-            var i;
+            for (var i = 0; i < data.length; i++) {
+                messages.push(data[i]);
+            }
 
-            for (i = 0; i < data.length; i++) {
-                $(".chat-window").append(data[i]);
+            for (var i = 0; i < messages.length; i++) {
+                $(".chat-window").append(messages[i].message);
             }
         });
     }
