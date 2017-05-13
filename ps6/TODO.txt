@@ -1,0 +1,10 @@
+-CREATE A DB WHICH WILL INCLUDE 2 TABLES:
+	-USERS:
+		-id;
+		-name;
+		-password;
+	-MESSAGES;
+		-id(for message);
+		-message;
+		-time;
+		-user_id;
