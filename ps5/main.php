@@ -28,7 +28,7 @@ session_start();
                 echo $_SESSION['username'];
             } ?></div>
     </div>
-    <div class="chat-window"></div>
+    <div class="chat-window" id="chat"></div>
     <div class="input-window">
         <form action="main_getting_data.php" method="post">
             <input type="text" id="message" name="message" placeholder="Type your message here...">

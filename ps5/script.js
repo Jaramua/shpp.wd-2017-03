@@ -8,6 +8,7 @@ $(document).ready(function () {
         e.preventDefault();
         $.post('insert_message.php', {msg: $("#message").val()});
         $("#message").val("");
+        $(".chat-window").stop().animate({ scrollTop: $(".chat-window")[0].scrollHeight}, 1000);
     });
 
     function getMsg() {
@@ -27,7 +28,11 @@ $(document).ready(function () {
 
             for (var i = 0; i < messages.length; i++) {
                 $(".chat-window").append(messages[i].message);
-            }
+                // $('#chat').scrollTop($('#chat')[0].scrollHeight);
+
+            }  
+               
         });
     }
+
 });
