@@ -2,16 +2,16 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    header('Location: login.php');
+    header('Location: index.php');
 }
 
 $jsonFile = 'messages.json';
 
 $time = time();
 if (!empty($_POST['msg'])) {
-    $message = $_POST["msg"];
-    $name = $_SESSION["username"];
-    $arr_msg = array('time' => $time, 'name' => $name, 'message' => $message);
+    $message = $_POST['msg'];
+    $userName = $_SESSION['username'];
+    $arr_msg = array('time' => $time, 'user' => $userName, 'message' => $message);
 
     if (file_exists($jsonFile)) {
         $data = file_get_contents($jsonFile);
