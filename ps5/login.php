@@ -46,13 +46,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             header('Location: index.php');
         } else {
             $arr[$name] = $password;
+            $_SESSION['username'] = $name;
             header('Location: main.php');
         }
 
         $data = json_encode($arr);
         file_put_contents($jsonFile, $data);
-        // header('Content-Type: application/json');
-        // echo $data;
+        header('Content-Type: application/json');
+        echo $data;
     }
 }
 

@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+
+
+
     setInterval(getMsg, 1000);
 
     $("#send").click(function (e) {
@@ -10,7 +13,6 @@ $(document).ready(function () {
     });
 
     function getMsg() {
-       
         $.post('main_getting_data.php', '', function (data) {
             $chat = $(".chat-window");
             $chat.html('');
@@ -20,7 +22,11 @@ $(document).ready(function () {
             for (i = 0; i < data.length; i++) {
                 $(".chat-window").append(data[i]);
             }
+
+            $(".chat-window").stop().animate({ scrollTop: $(".chat-window")[0].scrollHeight}, 1000);
         });
     }
+
+
 
 });
