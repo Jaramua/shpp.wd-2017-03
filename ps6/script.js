@@ -31,7 +31,7 @@ $(document).ready(function () {
             chat.append(table);
             console.log(data);
         });
-
+        $(".chat-window").stop().animate({ scrollTop: $(".chat-window")[0].scrollHeight}, 1000);
     }
 
 });
