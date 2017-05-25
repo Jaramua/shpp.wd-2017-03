@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Khula', sans-serif;
+        }
+        .text {
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h1>Put your text here:</h1>
+    <textarea class="text" id="text" ></textarea>
+</div>
+<div class="send">
+    <input type="text" id="regex">
+    <input type="submit" id="submit" value="search">
+</div>
+<div class="checkbox">
+    <p>Select a flag</p>
+    <input id="g" type="checkbox" class="check"  value="g">
+    <label for="g">g</label>
+    <input id="m" type="checkbox" class="check" value="m">
+    <label for="m">m</label>
+    <input id="i" type="checkbox" class="check" value="i">
+    <label for="i">i</label>
+</div>
+<div class="matched">
+    <h1>Result:</h1>
+    <div class="result" id="result" ></div>
+</div>
+<div class="error_box" id="error_box"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

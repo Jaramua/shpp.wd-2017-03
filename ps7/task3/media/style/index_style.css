@@ -1,0 +1,88 @@
+body {
+    background: #b9c783;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 250px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.container p {
+    padding-bottom: 5px;
+    font-family: 'Pacifico', cursive;
+    font-size: 57px;
+    color: #fffecd;
+}
+
+.container label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #635960;
+}
+
+.container input[type='text'], input[type='password'] {
+    display: block;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    background: #fffecd;
+}
+
+.container input[type='submit'] {
+    display: block;
+    width: 256px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #fffecd;
+    background: #635960;
+    border: none;
+}
+
+.field {
+    position: relative;
+}
+
+.field:before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 4px;
+    width: 258px;
+    height: 250px;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.06), transparent);
+    transform: rotate(-13deg);
+}
+
+.heal {
+    position: relative;
+}
+
+.heal:before {
+
+    content: "";
+    position: absolute;
+    left: 160px;
+    top: 34px;
+    width: 96px;
+    height: 18px;
+    background: #b9c783;
+}
+
+.container span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #635960;
+}

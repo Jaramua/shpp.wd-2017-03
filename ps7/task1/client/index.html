@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+<body>
+<div class="container" >
+    <form action="welcome.php" method="post" onsubmit="return validate(this)" name="form" class="form" >
+        IP address: <input  id="ip" name="ip"><br>
+        E-mail: <input id="email" type="text" name="email"><br>
+        URL: <input id="url" type="url" name="website"><br>
+        Date(format: MM/DD/YYYY): <input id="date" type="text" name="date"><br>
+        Time(format: HH:MM:SS): <input id="time" type="text" name="time"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
