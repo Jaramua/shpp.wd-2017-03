@@ -18,13 +18,13 @@ body {
 
 header {
 	margin: 0 auto;
-    padding: 10px 0 10px; 
+    padding: 0 0 10px; 
     background-image: url(import/blue-pattern.jpg);
 }
 
 header .container {
-	max-width: 1280px;
-	width: 80%;
+	max-width: 960px;
+	width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; 
@@ -38,12 +38,12 @@ header .container .logo {
     height: 100px;
     color: #03b2e4;
     text-align: center;
-    box-shadow: 15px 15px 5px 0px rgba(0, 162, 209, 0.75);
+    box-shadow: 15px 15px 0px 0px rgba(0, 162, 209, 0.75);
     font-family: 'Kaushan Script', cursive;
 }
 
 header .container .drop i {
-    font-size: 40px;
+    font-size: 30px;
     color: #FFF;
 }
 
@@ -57,7 +57,6 @@ header .container .drop i {
 	}
 }
 
-
 .home {
 	position: relative;
 	background-image: url(import/blue-pattern.jpg);
@@ -65,20 +64,20 @@ header .container .drop i {
 
 .home .first {
     max-width: 960px;
-	width: 80%;
-	height: 700px; 
+	width: 60%;
+	height: 497px; 
     margin: 0 auto;
     display: block;
     padding-top: 3%;
     background-image: url(import/iphone.png);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: 30%; 
+    background-size: 31%; 
 }
 
 .home .first .first-text{
 	width: 80%;
-    padding-top: 5%;
+    padding-top: 1px;
     color: #FFF;
     padding-bottom: 30%;
     background-image: none;
@@ -86,10 +85,13 @@ header .container .drop i {
     float: right;
 
 }
-
+@font-face {
+    font-family: 'BlackJack';
+    src: url('BLACKJAR.TTF');
+}
 .home  .first .first-text h1 {
 	font-family: 'BlackJack';
-	font-size: 75px;
+	font-size: 72px;
 	text-align: right;
 }
 
@@ -97,24 +99,24 @@ header .container .drop i {
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 190%;
-	margin-top: 3%;
+	margin-top: 12px;
 	text-align: justify;
 }
 
 .home  .first a {
 	display: block;
 	font-family: 'Montserrat', sans-serif;
-	width: 160px;
+	width: 170px;
 	font-size: 15px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding-top: 15px;
-    padding-bottom: 15px;
+	padding-top: 18px;
+    padding-bottom: 18px;
     border: 2px solid  white;
     border-radius: 2px;
     color: #FFF;
-    margin-top: 45px; 
+    margin-top: 12px; 
     float: right;
 }
 
@@ -126,6 +128,7 @@ header .container .drop i {
 	.home .first {
 		width: 100%;
 		height: 500px;
+		background-size: 30%; 
 	}
 	.home .first .first-text{
 		width: 90%;
@@ -151,6 +154,12 @@ header .container .drop i {
 	}
 }
 
+@media only screen and (max-width: 480px) {
+	.home .first {
+		background-size: 40%; 
+	}
+}
+
 
 .hello {
 	width: 100%;
@@ -160,7 +169,7 @@ header .container .drop i {
 .hello .second {
 	width: 100%;
 	max-width: 1920px;
-	height: 600px;
+	height: 537px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -168,14 +177,15 @@ header .container .drop i {
     background-image: url(import/ipad.png);
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: 25%; 
+    background-size: 23,5%; 
 }
 
 .hello .second .second-text{
-    margin-top: 3%;
+    margin-top: 20px;
     color: #707070;
     margin-bottom: 13%;
-    padding-left: 15%;
+    padding-left: 18%;
+    width: 80%;
 }
 
 .hello .second .second-text h1 {
@@ -186,8 +196,8 @@ header .container .drop i {
 
 .hello  .second .second-text p {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
-	margin-top: 20px;
+	font-size: 16px;
+	margin-top: 23px;
 	text-align: left;
 }
 .hello  .second .second-text .upper {
@@ -196,36 +206,45 @@ header .container .drop i {
 
 .hello  .second .second-text .lower {
 	width: 50%;
+	border-left: 5px solid #00ddff;
+	padding-left: 10px;
 }	
 
 .hello  .second a {
 	display: block;
 	font-family: 'Montserrat', sans-serif;
-	width: 180px;
+	width: 170px;
 	height: 25px;
 	font-size: 16px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding-top: 20px;
+	padding-top: 15px;
     padding-bottom: 15px;
     border: 2px solid  #21a590;
     border-radius: 2px;
     color: #21a590;
-    margin-top: 45px; 
+    margin-top: 65px; 
+    margin-left: 5px;
 }
 
 .hello .second .fa-envelope:before {
 	padding-left: 15px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 878px) {
+
+	.hello .second {
+		height: auto;
+	    background-size: 30%; 
+	}
+
 	.hello  .second .second-text .upper {
 		width: 90%;
 	}
 
 	.hello  .second .second-text .lower {
-		width: 80%;
+		width: 55%;
 	}
 }
 
@@ -248,22 +267,23 @@ header .container .drop i {
 .dribbble .third {
 	width: 100%;
 	max-width: 1920px;
-	height: 700px;
+	height: 619px;
     margin: 0 auto;
     display: block;
     padding-top: 30px; 
     background-image: url(import/devices.png);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: 65%;
+    background-size: 57%;
 }
 
 .dribbble .third .third-text {
-	width: 40%;
-    margin-top: 30px;
+	width: 31%;
+    margin-top: 65px;
     color: #707070;
     float: right;
     padding-bottom: 5%;
+    padding-right: 15%;
 }
 
 .dribbble  .third .third-text h1 {
@@ -274,10 +294,9 @@ header .container .drop i {
 
 .dribbble  .third .third-text p {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	margin-top: 8%;
+	font-size: 15px;
+	margin-top: 32px;
 	text-align: justify;
-	margin-bottom: 1%;
 }
 
 .dribbble  .third .third-text .upper {
@@ -291,17 +310,17 @@ header .container .drop i {
 .dribbble  .third a {
 	display: block;
 	font-family: 'Montserrat', sans-serif;
-	width: 210px;
+	width: 220px;
 	font-size: 15px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding-top: 15px;
+	padding-top: 17px;
     padding-bottom: 15px;
     border: 2px solid  #ef1359;
     border-radius: 2px;
     color: #ef1359;
-    margin-top: 45px; 
+    margin-top: 40px; 
 }
 
 
@@ -317,6 +336,7 @@ header .container .drop i {
 
 	.dribbble .third .third-text {
 		width: 90%;
+		padding-right: 0;
 	}
 	.dribbble  .third .third-text .upper {
 		width: 80%;
@@ -335,7 +355,7 @@ header .container .drop i {
 
 
 .beer {
-	height: 300px;
+	height: 325px;
 	background-image: url(import/green-pattern.jpg);
 }
 
@@ -355,14 +375,14 @@ header .container .drop i {
 
 .beer .fourth p {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 45px;
-	margin-top: 60px; 
+	font-size: 40px;
+	margin-top: 77px; 
 } 
 
 .beer .fourth a {
 	display: block;
 	font-family: 'Montserrat', sans-serif;
-	width: 200px;
+	width: 220px;
 	font-size: 15px;
 	text-align: center;
 	text-decoration: none;
@@ -372,8 +392,8 @@ header .container .drop i {
     border: 2px solid  white;
     border-radius: 2px;
     color: white;
-    margin-top: 45px; 
-    margin-left: 30%;
+    margin-top: 36px; 
+    margin-left: 26%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -393,26 +413,28 @@ header .container .drop i {
 .contact {
 	width: 100%;
 	background: #f4f4f4;
+	height: 650px;
 }
 
 .contact .fifth {
-	padding-top: 10%;
+	padding-top: 16%;
 	display: flex;
 	margin: 0 auto;
 	width: 50%;
 	flex-direction: column;
+	height: 421px;
 }
 
 .contact .fifth .icons .box {
 	display: flex;
 	flex-direction: row;
 	margin: 0 auto;
-	width: 60%;
+	width: 50%;
 }
 
 .contact .fifth .icons .box .circle {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     border: 3px solid #707070;
     border-radius: 50%;
     background-color: #f4f4f4;
@@ -432,7 +454,7 @@ header .container .drop i {
 
 
 .contact .fifth .enter {
-	padding-top: 10%;
+	padding-top: 7%;
     font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	color: #707070;
@@ -441,8 +463,7 @@ header .container .drop i {
 	width: 100%;
 	flex-direction: row;
 	align-items: baseline;
-	padding-bottom: 35%;
-	margin-left: 18%;
+	margin-left: 22%;
 } 
 
 .contact .fifth .enter b {
@@ -450,14 +471,16 @@ header .container .drop i {
 }
 
 .contact .fifth .enter .field {
-	width: 230px;
+	width: 220px;
 	height: 40px;
     border-radius: 10px;
 	border-style: none;
 	background-color: white;
+	margin-left: 2%;
 }
 
 input[type="email"] {
+	width: 150px;
 	border-radius: 10px;
 	outline: none;
     border: none;
@@ -521,10 +544,10 @@ footer {
 
 footer p {
 	text-align: center;
-    padding: 40px 0px 0px 0px; 
+    padding: 45px 0px 0px 0px; 
     color: #707070;
   	font-family: 'Montserrat', sans-serif;
-  	font-size: 15px; 
+  	font-size: 12px; 
 }
 
 footer p span {
@@ -532,13 +555,13 @@ footer p span {
 }
 
 #toTop {
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 40px;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 29px;
+    right: 13%;
     display: none;
-    background-color: #FFF;
+    background-color: #F4F4F4;
     border-radius: 10%;
     opacity: 0.8;
     text-align: center;
@@ -546,7 +569,7 @@ footer p span {
 
 #toTop i {
     color: #707070;
-    font-size: 40px;
+    font-size: 30px;
     position: relative;
     top: 2px;
 }
