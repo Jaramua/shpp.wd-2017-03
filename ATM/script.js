@@ -11,55 +11,72 @@ var ATM = {
     ],
     // authorization
     auth: function(number, pin) {
-        if (this.users[1]['number'] !== "0025" && this.users[1]['pin'] !== "123") {
-            this.current_user == false;
-            console.log('Could not authorizate');
-        } else {
-            this.current_type == "user";
-            this.current_user == true;
-            this.is_auth == true;
-            console.log('welcome');
-        }
-
-        if (this.users[0]['number'] !== "0000" && this.users[0]['pin'] !== "000") {
-            this.current_user == false;
-            console.log('Could not authorizate');
-        } else {
+        if (number == this.users[0]["number"] && pin == this.users[0]["pin"]) {
             this.current_type == "admin";
-            this.current_user == true;
+            this.current_user == this.users[0];
+            this.is_auth == true;
+            console.log('welcome, admin');
+        } else if (number == this.users[1]["number"] && pin == this.users[1]["pin"]) {
+            this.current_type == "user";
+            this.current_user == this.users[1];
             this.is_auth == true;
             console.log('welcome');
+        } else {
+            console.log("Authorization is denied. Wrong data" );
+            return false;
         }
-
     },
     // check current debet
     check: function() {
         if (this.is_auth){
-          console.log(users['debet']);
+          console.log(this.current_user['debet']);
         }
     },
     // get cash - available for user only
     getCash: function(amount) {
-        if (this.is_auth){
-            users['debet'] = users['debet'] - amount;
-            if (cash < amount) {
-               console.log("Sorry, ATM has only " + cash + " deneg");
+        if (this.is_auth) {
+            if (this.is_auth && this.current_type == "users") {
+                if ((this.current_user['debet'] - amount) >= 0
+                    && (this.cash - amount) >= 0) {
+                    this.current_user['debet'] -= amount;
+                    this.cash -= amount;
+                    console.log("operation is successful");
+                } else {
+                    console.log("error");
+                }
+            } else {
+                console.log("this function is allowed only for users");
             }
-            if (users['debet'] < amount) {
-               console.log("Sorry, you have only " + users['debet'] + " deneg");
-            }
+        } else {
+            console.log("Error. Authorization first");
         }
     },
     // load cash - available for user only
     loadCash: function(amount){
         if(this.is_auth) {
-            users['debet'] = users['debet'] + amount;
-            console.log("Cash in amount of " + amount + "id added to your account");
+            if(this.current_type == "user"){
+                this.current_user['debet'] += amount;
+                console.log("Cash in amount of " + amount + "id added to your account");
+            } else {
+                console.log("this function is allowed only for users");
+            }
+
+        } else {
+            console.log("Error. Authorization first");
         }
     },
     // load cash to ATM - available for admin only - EXTENDED
     load_cash: function(addition) {
-
+        if(this.is_auth) {
+            if (this.current_type == "admin") {
+                this.cash += addition;
+                console.log("Cash in amount of " + addition + "id added to your ATM");
+            } else {
+                console.log("this function is allowed only for admin");
+            }
+        } else {
+            console.log("Error. Authorization first");
+        }
     },
     // get report about cash actions - available for admin only - EXTENDED
     getReport: function() {
@@ -71,5 +88,5 @@ var ATM = {
     this.current_user == false;
     this.current_type == false;
     }
-}
+};
 
