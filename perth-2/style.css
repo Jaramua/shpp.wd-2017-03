@@ -150,9 +150,16 @@ header .container .drop i {
 		width: 160px;
 		font-size: 15px;
 		float: none;
-		margin-left: 20%;
+		margin-left: 29%;
 	}
 }
+
+@media only screen and (max-width: 480px) {
+	.home  .first a {
+		margin-left: 25%;
+	}
+}
+
 
 @media only screen and (max-width: 480px) {
 	.home .first {
@@ -405,7 +412,14 @@ header .container .drop i {
 @media only screen and (max-width: 768px) {
 	.beer .fourth a {
 		width: 200px;
-	    margin-left: 15%;
+	    margin-left: 31%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.beer .fourth a {
+		width: 200px;
+	    margin-left: 19%;
 	}
 }
 
@@ -429,7 +443,7 @@ header .container .drop i {
 	display: flex;
 	flex-direction: row;
 	margin: 0 auto;
-	width: 50%;
+	width: 360px;
 }
 
 .contact .fifth .icons .box .circle {
@@ -498,15 +512,35 @@ input[type="email"] {
 }
 
 @media only screen and (max-width: 768px) {
+	.contact {
+		height: auto;
+	}
 	.contact .fifth {
+		height: 300px;
 		width: 80%;
 		flex-direction: column;
 	}
 
 	.contact .fifth .icons .box {
-		width: 100%;
+		width: 70%;
 	}
 }
+
+@media only screen and (max-width: 570px) {
+
+	.contact .fifth .icons .box {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	.contact .fifth .icons .box {
+		width: 80%;
+	}
+}
+
+
 
 @media only screen and (max-width: 480px) {
 
@@ -521,21 +555,26 @@ input[type="email"] {
 	}
 }
 
-@media only screen and (max-width: 370px) {
-
+@media only screen and (max-width: 890px) {
 	.contact .fifth .enter {
 		width: 80%;
 		flex-direction: column;
-		margin-left: 0;
+		margin-left: 26%;
+	}
+}
+
+
+@media only screen and (max-width: 500px) {
+
+	.contact .fifth .enter {
+		width: 70%;
+		flex-direction: column;
+		margin-left: 23%;
 	} 
 }
 
-@media only screen and (max-width: 824px) {
-	.contact .fifth .enter {
-		width: 80%;
-		flex-direction: column;
-	}
-}	 
+
+	 
 
 footer {
 	height: 100px;
