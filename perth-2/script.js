@@ -9,7 +9,7 @@ $(document).ready(function () {
             }
         });
         $('#toTop').click(function () {
-            $('body,html').animate({scrollTop: 0}, 800);
+            $('body').animate({scrollTop: 0}, 800);
         });
     });
     

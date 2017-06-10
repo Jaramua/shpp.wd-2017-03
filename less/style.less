@@ -1,0 +1,81 @@
+// declaring variables and mixins 
+
+@grey: #666666;
+.main-backgraund() {
+	background: url(geometry.png) top left repeat, url(geometry.png) top left no-repeat;
+}
+.centred() {
+	display: flex;
+	margin: 0 auto;
+}
+
+
+// ================= main code =====================
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+	.main-backgraund;
+}
+
+.logo{
+	opacity: 0.7;
+}
+.container {
+	.centred;
+	width: 400px;
+	height: 300px;
+	flex-direction: column;
+	background-color: white;
+	box-shadow: 1px 1px 8px -1px rgba(102,102,102,0.75);
+
+
+	.form {
+		.centred;
+		width: 250px;
+		height: 250px; 
+		flex-direction: column;
+		margin-top: 15%;
+
+		.user_input {
+			width: 250px;
+			height: 40px;
+			padding-left: 5px;
+			outline: none;
+			border: 1px solid @grey;
+			display: block;
+			margin-bottom: 1%;
+			.main-backgraund;
+		}
+	}
+}
+
+.bottom {
+
+	.remember {
+		margin-top: 4%;
+		color: @grey;
+	}
+
+	input[type="submit"] {
+		width: 255px;
+		display: block;
+		height: 40px;
+		outline: none;
+		text-align: center;
+		font-size: 15px;
+		text-transform: uppercase;
+		font-weight: bold;
+		background: rgba(255, 0, 0, 0.75);
+		border: none;
+		color: white;
+		opacity: .7;
+		margin-top: 7%;
+	}
+}
+
+
+
+
+
