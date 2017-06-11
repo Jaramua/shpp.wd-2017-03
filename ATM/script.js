@@ -41,6 +41,7 @@ var ATM = {
                         this.users[this.current_user].debet-= amount;
                         this.cash -= amount;
                         console.log("operation is successful");
+                        console.log("ATM has: " + ATM.cash);
                     } else {
                         console.log("Error. ATM don`t have enough money");
                     }
