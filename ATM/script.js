@@ -60,6 +60,7 @@ var ATM = {
         if (this.is_auth) {
             if (this.current_type == "user") {
                 this.users[this.current_user].debet += amount;
+                this.cash += amount;
                 console.log("Cash in amount of " + amount + " is added to your account");
             } else {
                 console.log("this function is allowed only for users");
